@@ -1,0 +1,116 @@
+.section{
+    //margin-bottom: 80px;
+    &--main{
+        margin-bottom: 80px;
+    }
+    &__img{
+        .section--main &{
+            height: 100%;
+            width: 101%;
+            box-shadow: 0 20px 20px $shadow-color;
+        }
+        .section--second &{
+            &--top-left{
+                height: 422px;
+                width: 50%;
+            }
+            &--bott-left{
+                height: 422px;
+                width: 50%;
+            }
+            &--right{
+                width: 50%;
+                height: 100%;
+                float: right;
+            }
+            box-shadow: 0 5px 30px $primary-color;
+            position: relative;
+        }
+        .section--sponsor &{
+            height: 130px;
+            width: 130px;
+            margin-left: 25px;
+            &:first-child{
+                height: 60px;
+                width: 200px;
+            }
+            &:last-child{
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+    &__text{
+        .section--main &{
+            float: right;
+            position: relative;
+            margin-top: -40%;
+            margin-right: 10%;
+            text-align: center;
+            &--h2{
+                color: $secondary-color;
+                font-family: 'pacifico', cursive;
+                font-size: 55px;
+            }
+            &--h3{
+                color: $black-back-font-color;
+                font-family: 'Poppins', sans-serif;
+                font-size: 90px;
+            }
+            &--p{
+                color: $black-back-font-color;
+                font-size: 25px;
+            }
+            &--a{
+                color: $third-color;
+                font-size: 25px;
+                background-color: $secondary-color;
+                padding: 8px;
+                border-radius: 10px;
+                &:hover{
+                    text-decoration: none;
+                    color: $black-back-font-color;
+                }
+            }
+        }
+        .section--second &{
+            &--p{
+                font-size: 40px;
+                margin-left: 70px;
+                text-align: center;
+                margin-bottom: 80px;
+            }
+        }
+        .section--delivery-info &{
+            &--p{
+                color: $primary-color;
+                font-family: podkova, serif;
+                font-size: 35px;
+                text-align: center;
+                padding-right: 130px;
+                padding-left: 130px;
+                padding-top: 50px;
+                margin-right: 70px;
+            }
+        }
+    }
+
+    &--second{
+        height: 100%;
+    }
+
+    &--delivery-info{
+        background-color: $secondary-color;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        vertical-align: center;
+    }
+
+    &--sponsor{
+        background-color: $primary-color;
+        height: 350px;
+        width: 100%;
+        border-bottom: solid 1px gray;
+    }
+    
+}

@@ -1,0 +1,12 @@
+.footer{
+    &__container{
+        background-color: $primary-color;
+        height: 53px;
+    }
+    &__text{
+        color: $black-back-font-color;
+        margin-bottom: 0px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
