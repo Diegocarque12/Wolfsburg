@@ -234,6 +234,11 @@ body {
   font-size: large;
 }
 
+.login__button--log:hover {
+  background-color: #d4bf00;
+  color: #000;
+}
+
 .login__form {
   position: relative;
   float: right;
