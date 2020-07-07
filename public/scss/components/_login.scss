@@ -1,6 +1,6 @@
 .login{
     margin-top: 20px;
-
+    margin-bottom: 30px;
     &__img{
         position: relative;
         height: 550px;
@@ -52,9 +52,9 @@
     }
 
     &__form{
-        position: relative;
+        position: absolute;
         float: right;
-        bottom: 520px;
+        bottom: 5px;
         right: 190px;
         width: 400px;
         &__container{

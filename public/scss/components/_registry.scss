@@ -1,9 +1,10 @@
 .registry{
 
     margin-top: 20px;
+    margin-bottom: 30px;
 
     &__img{
-        position: absolute;
+        position: relative;
         height: 550px;
         width: 450px;
         left: 800px;
@@ -16,7 +17,7 @@
         width: 260px;
         height: 115px;
         left: 890px;
-        bottom: -400px;
+        top: 300px;
         padding: 20px 40px 20px;
         border-radius: 10px;
         text-align: center;
@@ -24,6 +25,9 @@
 
     &__text{
         font-size: 28px;
+        &--title{
+            margin-bottom: 20px;
+        }
     }
 
 
@@ -38,7 +42,7 @@
                 text-decoration: none;
             }
         }
-        &--log{
+        &--reg{
             background-color: $secondary-color;
             padding: 8px;
             border: none;
@@ -53,9 +57,16 @@
     }
 
     &__form{
+        position: absolute;
+        float: left;
+        top: 200px;
         width: 400px;
+        padding-top: 30px;
+            right: 200px;
+            left: 200px;
         &__container{
             margin-top: 40px;
+            
         }
 
     }

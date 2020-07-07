@@ -13,6 +13,11 @@ body {
   color: #fff;
 }
 
+.article {
+  min-height: 100%;
+  margin-bottom: -53px;
+}
+
 .section--main {
   margin-bottom: 80px;
 }
@@ -184,6 +189,7 @@ body {
 
 .login {
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .login__img {
@@ -240,9 +246,9 @@ body {
 }
 
 .login__form {
-  position: relative;
+  position: absolute;
   float: right;
-  bottom: 520px;
+  bottom: 5px;
   right: 190px;
   width: 400px;
 }
@@ -253,10 +259,11 @@ body {
 
 .registry {
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .registry__img {
-  position: absolute;
+  position: relative;
   height: 550px;
   width: 450px;
   left: 800px;
@@ -269,7 +276,7 @@ body {
   width: 260px;
   height: 115px;
   left: 890px;
-  bottom: -400px;
+  top: 300px;
   padding: 20px 40px 20px;
   border-radius: 10px;
   text-align: center;
@@ -277,6 +284,10 @@ body {
 
 .registry__text {
   font-size: 28px;
+}
+
+.registry__text--title {
+  margin-bottom: 20px;
 }
 
 .registry__button {
@@ -294,7 +305,7 @@ body {
   text-decoration: none;
 }
 
-.registry__button--log {
+.registry__button--reg {
   background-color: #FFE609;
   padding: 8px;
   border: none;
@@ -303,13 +314,19 @@ body {
   font-size: large;
 }
 
-.registry__button--log:hover {
+.registry__button--reg:hover {
   background-color: #d4bf00;
   color: #000;
 }
 
 .registry__form {
+  position: absolute;
+  float: left;
+  top: 200px;
   width: 400px;
+  padding-top: 30px;
+  right: 200px;
+  left: 200px;
 }
 
 .registry__form__container {
