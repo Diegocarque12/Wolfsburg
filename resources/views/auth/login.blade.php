@@ -84,18 +84,26 @@
     
 
     <div class="registry">
-        <div >
-            <img class="registry__img" src="../src/register.jpg" alt="">
+        
+        <div>
+        
+            <img src="../src/register.jpg" class="registry__img" alt="">
+            <div class="registry__modal">
+                <p class="registry__text">No te encuentras registrado todavia? Puedes hacerlo de forma sencilla y segura</p>
+                <button class="btn btn-outline-warning registry__button"><span class="registry__button--login">Registrarme</span></button>
+            </div>
+            
         </div>
 
         <div class="registry__form">
-            <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+            <h3 class="text-center login__text--title">Registrarse</h3>
+            <form class="form-horizontal registry__form__container" method="POST" action="{{ route('register') }}">
                 {{ csrf_field() }}
 
-                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }} mb-5">
                     <label for="name" class="col-md-4 control-label">Name</label>
 
-                    <div class="col-md-6">
+                    <div class="pt-2">
                         <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
 
                         @if ($errors->has('name'))
@@ -106,10 +114,10 @@
                     </div>
                 </div>
 
-                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }} mb-5">
                     <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
-                    <div class="col-md-6">
+                    <div class="pt-2">
                         <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
                         @if ($errors->has('email'))
@@ -120,10 +128,10 @@
                     </div>
                 </div>
 
-                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }} mb-5">
                     <label for="password" class="col-md-4 control-label">Password</label>
 
-                    <div class="col-md-6">
+                    <div class="pt-2">
                         <input id="password" type="password" class="form-control" name="password" required>
 
                         @if ($errors->has('password'))
@@ -134,16 +142,16 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-5">
                     <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
 
-                    <div class="col-md-6">
+                    <div class="pt-2">
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <div class="col-md-6 col-md-offset-4">
+                    <div class="text-center mt-5">
                         <button type="submit" class="btn btn-primary">
                             Register
                         </button>

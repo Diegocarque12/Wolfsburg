@@ -1,13 +1,67 @@
 .registry{
 
+    margin-top: 20px;
+
     &__img{
         height: 550px;
-        width: 400px;
+        width: 450px;
         position: relative;
+        left: 200px;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    &__modal{
+        background-color: $modal-opacity-color;
+        position: absolute;
+        width: 260px;
+        height: 160px;
+        left: 280px;
+        top: 300px;
+        padding: 20px 40px 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    &__text{
+        font-size: 18px;
+    }
+
+
+    &__button{
+        position: absolute;
+        left: 66px;
+        top: 170px;
+        &--login{
+            font-size: 20px;
+            text-decoration: underline $secondary-color;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &--log{
+            background-color: $secondary-color;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            color: $black-back-font-color;
+            font-size: large;
+            &:hover{
+                background-color: $hover-button-color;
+                color: $primary-color;
+            }
+        }
     }
 
     &__form{
-        
+        position: relative;
+        float: right;
+        bottom: 520px;
+        right: 190px;
+        width: 400px;
+        &__container{
+            margin-top: 40px;
+        }
+
     }
 
 }

@@ -251,8 +251,71 @@ body {
   margin-top: 40px;
 }
 
+.registry {
+  margin-top: 20px;
+}
+
 .registry__img {
   height: 550px;
-  width: 400px;
+  width: 450px;
   position: relative;
+  left: 200px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.registry__modal {
+  background-color: rgba(212, 212, 212, 0.6);
+  position: absolute;
+  width: 260px;
+  height: 160px;
+  left: 280px;
+  top: 300px;
+  padding: 20px 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.registry__text {
+  font-size: 18px;
+}
+
+.registry__button {
+  position: absolute;
+  left: 66px;
+  top: 170px;
+}
+
+.registry__button--login {
+  font-size: 20px;
+  text-decoration: underline #FFE609;
+}
+
+.registry__button--login:hover {
+  text-decoration: none;
+}
+
+.registry__button--log {
+  background-color: #FFE609;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: large;
+}
+
+.registry__button--log:hover {
+  background-color: #d4bf00;
+  color: #000;
+}
+
+.registry__form {
+  position: relative;
+  float: right;
+  bottom: 520px;
+  right: 190px;
+  width: 400px;
+}
+
+.registry__form__container {
+  margin-top: 40px;
 }
