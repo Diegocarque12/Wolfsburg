@@ -3,27 +3,27 @@
     margin-top: 20px;
 
     &__img{
+        position: absolute;
         height: 550px;
         width: 450px;
-        position: relative;
-        left: 200px;
-        border-radius: 20px 0px 0px 20px;
+        left: 800px;
+        border-radius: 0px 20px 20px 0px;
     }
 
     &__modal{
         background-color: $modal-opacity-color;
         position: absolute;
         width: 260px;
-        height: 160px;
-        left: 280px;
-        top: 300px;
+        height: 115px;
+        left: 890px;
+        bottom: -400px;
         padding: 20px 40px 20px;
         border-radius: 10px;
         text-align: center;
     }
 
     &__text{
-        font-size: 18px;
+        font-size: 28px;
     }
 
 
@@ -53,10 +53,6 @@
     }
 
     &__form{
-        position: relative;
-        float: right;
-        bottom: 520px;
-        right: 190px;
         width: 400px;
         &__container{
             margin-top: 40px;

@@ -85,15 +85,15 @@
 
     <div class="registry">
         
-        <div>
+    <div>
         
-            <img src="../src/register.jpg" class="registry__img" alt="">
-            <div class="registry__modal">
-                <p class="registry__text">No te encuentras registrado todavia? Puedes hacerlo de forma sencilla y segura</p>
-                <button class="btn btn-outline-warning registry__button"><span class="registry__button--login">Registrarme</span></button>
-            </div>
-            
+        <img src="../src/register.jpg" class="registry__img" alt="">
+        <div class="registry__modal">
+            <p class="registry__text">Ya tienes una cuenta?</p>
+            <button class="btn btn-outline-warning registry__button"><span class="registry__button--login">Iniciar sesion</span></button>
         </div>
+        
+    </div>
 
         <div class="registry__form">
             <h3 class="text-center login__text--title">Registrarse</h3>
@@ -159,6 +159,7 @@
                 </div>
             </form>
         </div>
+        
     </div>
 
 </section>
