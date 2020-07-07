@@ -1,10 +1,10 @@
 .login{
     margin-top: 20px;
-
+    margin-bottom: 30px;
     &__img{
+        position: relative;
         height: 550px;
         width: 450px;
-        position: relative;
         left: 200px;
         border-radius: 20px 0px 0px 20px;
     }
@@ -48,16 +48,16 @@
             color: $black-back-font-color;
             font-size: large;
             &:hover{
+                color: $primary-color;
                 background-color: $hover-button-color;
-                font-size: 20px;
             }
         }
     }
 
     &__form{
-        position: relative;
+        position: absolute;
         float: right;
-        bottom: 520px;
+        bottom: 5px;
         right: 190px;
         width: 400px;
         &__container{
