@@ -45,7 +45,8 @@
             color: $black-back-font-color;
             font-size: large;
             &:hover{
-
+                background-color: $hover-button-color;
+                color: $primary-color;
             }
         }
     }
