@@ -181,3 +181,73 @@ body {
   text-decoration: none;
   color: #FFE609;
 }
+
+.login {
+  margin-top: 20px;
+}
+
+.login__img {
+  height: 550px;
+  width: 450px;
+  position: relative;
+  left: 200px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.login__modal {
+  background-color: rgba(212, 212, 212, 0.6);
+  position: absolute;
+  width: 260px;
+  height: 160px;
+  left: 280px;
+  top: 300px;
+  padding: 20px 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login__text {
+  font-size: 18px;
+}
+
+.login__button {
+  position: absolute;
+  left: 66px;
+  top: 170px;
+}
+
+.login__button--registry {
+  font-size: 20px;
+  text-decoration: underline #FFE609;
+}
+
+.login__button--registry:hover {
+  text-decoration: none;
+}
+
+.login__button--log {
+  background-color: #FFE609;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: large;
+}
+
+.login__form {
+  position: relative;
+  float: right;
+  bottom: 520px;
+  right: 190px;
+  width: 400px;
+}
+
+.login__form__container {
+  margin-top: 40px;
+}
+
+.registry__img {
+  height: 550px;
+  width: 400px;
+  position: relative;
+}
