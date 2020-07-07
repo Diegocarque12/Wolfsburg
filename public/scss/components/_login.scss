@@ -23,6 +23,9 @@
 
     &__text{
         font-size: 18px;
+        &--title{
+            text-decoration: underline $secondary-color;
+        }
     }
 
 
@@ -45,7 +48,8 @@
             color: $black-back-font-color;
             font-size: large;
             &:hover{
-
+                background-color: $hover-button-color;
+                font-size: 20px;
             }
         }
     }

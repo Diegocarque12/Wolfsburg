@@ -210,6 +210,10 @@ body {
   font-size: 18px;
 }
 
+.login__text--title {
+  text-decoration: underline #FFE609;
+}
+
 .login__button {
   position: absolute;
   left: 66px;
@@ -232,6 +236,11 @@ body {
   border-radius: 5px;
   color: #fff;
   font-size: large;
+}
+
+.login__button--log:hover {
+  background-color: #d3c332;
+  font-size: 20px;
 }
 
 .login__form {
