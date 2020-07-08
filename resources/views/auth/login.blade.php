@@ -56,9 +56,9 @@
                     </div>
                 </div>
 
-                <div class="form-group ">
+                <div class="form-group login__form__group">
                     <div class="">
-                        <div class="checkbox">
+                        <div class="checkbox ">
                             <label>
                                 <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
                             </label>
