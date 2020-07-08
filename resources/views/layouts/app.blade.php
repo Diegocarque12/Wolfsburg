@@ -21,7 +21,6 @@
             <a href="{{ url('/') }}" class="navbar-brand ">
               <img src="../src/logoCopy.png" class="nav__link--brand" alt="logo-Wolfsburg">
             </a>
-<<<<<<< Updated upstream
 
           
             <div class="navbar navbar-expand-lg">
@@ -93,26 +92,6 @@
                                     onclick="event.preventDefault();
                                               document.getElementById('logout-form').submit();">
                                     Logout
-=======
-          </div>
-
-            <div class="col-10  ">
-              <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button> -->
-              
-                  @if (Route::has('login'))
-                    <div class="">
-                        @auth
-                          <li class="dropdown">
-                            <ul class="nav__list">
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Home</a></li>
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>
-                              <li class="nav__item"><a href="#" class="text-white col-auto btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                                Welcome {{ Auth::user()->name }}! <span class="caret"></span>
->>>>>>> Stashed changes
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
