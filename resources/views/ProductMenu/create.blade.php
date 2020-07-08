@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="section">
-	<h1 class="display-4">Create a new Product </h1>
+	<h1 class="display-4">Crear un nuevo producto</h1>
 
 	<form method="post" action="{{ url('/products') }}">
 		{{ csrf_field() }}
@@ -31,8 +31,10 @@
 	        @endforeach
 	      </select>
 	    </div>
-
-	  <button type="submit" class="btn btn-primary">Create new Product</button>
+	 
+	  <button type="submit" class="btn btn-primary">Guardar</button>
+	  <a href="{{ url('/products/productList') }}" class="btn btn-secondary">Regresar</a>
+	  
 	</form>
-
+	</div>
 @endsection
