@@ -37,7 +37,8 @@
             width: 170px;
             margin: 2vh 1vw 2vh 4vw;
             @media (max-width: 768px) { 
-                margin-left: 30%;
+                margin-left: 40%;
+                margin-right: 10%;
             }
         }
 
@@ -59,7 +60,7 @@
             &:focus{
                 outline:none;
             }
-            @media (max-width: 768px) { 
+            @media (max-width: 768px){ 
                 display: inline;
                 float: inline-end;
                 margin: 2vh 5vw 2vh 0vw;

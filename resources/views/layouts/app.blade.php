@@ -63,57 +63,8 @@
               </ul>
             </div>
              
-
-
-             
-            
-            <!--  @if (Route::has('login'))
-                <div class="">
-                
-                    @auth
-                      <li class="dropdown">
-                        <ul class="nav__list">
-                           <li class="nav__item" ></li>
-                          <li class="nav__item" ></li>
-                          <li class="nav__item" ></li>
-                          <li class="nav__item" ></li> 
-                          <li class="nav__item"><a href="#" class="text-white col-auto btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                            Welcome {{ Auth::user()->name }}! <span class="caret"></span>
-                            </a>
-                          </li>
-                        </ul>
-
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a href="{{ url('ProductMenu/productList') }}">Admin</a>
-                          </li>
-                            <li>
-                                <a href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
-                                              document.getElementById('logout-form').submit();">
-                                    Logout
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                        </ul>
-                    </li>
-                    @else
-                      <ul class="nav__list">
-                         <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Home</a></li>
-                        <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
-                        <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
-                        <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>
-                        <li class="nav__item" ><a class="nav__link" href="{{ url('login') }}">Login</a></li>
-                      </ul>
-                    @endauth
-                </div>
-              @endif -->
            
             </div>
-          <!-- </div> -->
         </div>
 
       </div>
