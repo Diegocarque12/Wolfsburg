@@ -27,7 +27,7 @@
 	      <label for="category_id">Categoria</label>
 	      <select name="category_id" id="input-category" class="form-control">
 	      	@foreach ($categories as $category)
-	        	<option data-subtext="{{ $category->id }}" value="{{ $category->name }}" >{{ $category->name }}</option>
+	        	<option data-subtext="{{ $category->name }}" value="{{ $category->id }}" >{{ $category->name }}</option>
 	        @endforeach
 	      </select>
 	    </div>
