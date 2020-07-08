@@ -16,65 +16,105 @@
 
   <body>
     <header>
-      <div class="nav--header row">
+      <div class="nav nav--header ">
 
-          <div class="col-2 text-center">
-            <a href="{{ url('/') }}" class="nav__link--brand">
+            <a href="{{ url('/') }}" class="navbar-brand ">
               <img src="../src/logoCopy.png" class="nav__link--brand" alt="logo-Wolfsburg">
             </a>
-          </div>
 
-            <div class="col-10  ">
-              <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button> -->
-              
-                  @if (Route::has('login'))
-                    <div class="">
-                        @auth
-                          <li class="dropdown">
-                            <ul class="nav__list">
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Home</a></li>
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('contact') }}">Contact Us</a></li>
-                              <li class="nav__item"><a href="#" class="text-white col-auto btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                                Welcome {{ Auth::user()->name }}! <span class="caret"></span>
-                                </a>
-                              </li>
-                            </ul>
+          
+            <div class="navbar navbar-expand-lg">
+              <button class="nav__btn--colapse" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="">Options</span>
+              </button>
 
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a href="{{ url('ProductMenu/productList') }}">Admin</a>
-                              </li>
-                                <li>
-                                    <a href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
+             <div class="collapse navbar-collapse" id="navbarNav"> 
+              <ul class="navbar-nav mr-auto">
+                <li class="nav__item active" ><a class="nav__link" href="{{ url('') }}">Home</a></li>
+                <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
+                <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
+                <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>
+                @if (Route::has('login'))
+                  @auth
+                  <a href="#" class="dropdown text-white col-auto btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                            Welcome {{ Auth::user()->name }}! <span class="caret"></span>
+                  </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="{{ url('ProductMenu/productList') }}">Admin</a>
+                      </li>
+                      <li>
+                        <a href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                      document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </li>
-                            </ul>
-                        </li>
-                        @else
-                          <ul class="nav__list">
-                            <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Home</a></li>
-                            <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
-                            <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
-                            <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>
-                            <li class="nav__item" ><a class="nav__link" href="{{ url('login') }}">Login</a></li>
-                          </ul>
-                        @endauth
-                    </div>
-                  @endif
-                </div>
-              </div>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                      </li>
+                    </ul>
+                    @else
+                    <li class="nav__item" ><a class="nav__link" href="{{ url('login') }}">Login</a></li>
+                  @endauth
+                @endif
+                
+              </ul>
             </div>
+             
+
+
+             
+            
+            <!--  @if (Route::has('login'))
+                <div class="">
+                
+                    @auth
+                      <li class="dropdown">
+                        <ul class="nav__list">
+                           <li class="nav__item" ></li>
+                          <li class="nav__item" ></li>
+                          <li class="nav__item" ></li>
+                          <li class="nav__item" ></li> 
+                          <li class="nav__item"><a href="#" class="text-white col-auto btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                            Welcome {{ Auth::user()->name }}! <span class="caret"></span>
+                            </a>
+                          </li>
+                        </ul>
+
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="{{ url('ProductMenu/productList') }}">Admin</a>
+                          </li>
+                            <li>
+                                <a href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                              document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                    @else
+                      <ul class="nav__list">
+                         <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Home</a></li>
+                        <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
+                        <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
+                        <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>
+                        <li class="nav__item" ><a class="nav__link" href="{{ url('login') }}">Login</a></li>
+                      </ul>
+                    @endauth
+                </div>
+              @endif -->
+           
+            </div>
+          <!-- </div> -->
+        </div>
 
       </div>
     </header>
