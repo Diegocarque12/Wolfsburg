@@ -34,18 +34,20 @@
                         @auth
                           <li class="dropdown">
                             <ul class="nav__list">
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Menu</a></li>
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Delivery</a></li>
+                              <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Home</a></li>
+                              <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
                               <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
                               <li class="nav__item" ><a class="nav__link" href="{{ url('contact') }}">Contact Us</a></li>
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('login') }}">Login</a></li>
+                              <li class="nav__item"><a href="#" class="text-white col-auto btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                                Welcome {{ Auth::user()->name }}! <span class="caret"></span>
+                                </a>
+                              </li>
                             </ul>
 
-                            <a href="#" class="text-white col-auto btn btn-outline-secundary dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                                Welcome {{ Auth::user()->name }}! <span class="caret"></span>
-                            </a>
-
                             <ul class="dropdown-menu">
+                              <li>
+                                <a href="{{ url('ProductMenu/productList') }}">Admin</a>
+                              </li>
                                 <li>
                                     <a href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
@@ -61,8 +63,8 @@
                         </li>
                         @else
                           <ul class="nav__list">
-                            <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Menu</a></li>
-                            <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Delivery</a></li>
+                            <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Home</a></li>
+                            <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
                             <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
                             <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>
                             <li class="nav__item" ><a class="nav__link" href="{{ url('login') }}">Login</a></li>

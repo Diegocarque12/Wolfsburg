@@ -2,28 +2,35 @@
 
     margin-top: 20px;
     margin-bottom: 30px;
-
+    height: 100vh;
     &__img{
-        position: relative;
-        height: 550px;
+        float: right;
+        height: 100vh;
         width: 450px;
-        left: 800px;
+        min-height: 480px;
+        max-height: 550px;
+        margin-right: 12vw;
         border-radius: 0px 20px 20px 0px;
     }
 
     &__modal{
         background-color: $modal-opacity-color;
-        position: absolute;
         width: 260px;
         height: 115px;
-        left: 890px;
-        top: 300px;
+        float: right;
+        position: relative;
+        left: 22vw;
+        top: 15vh;
         padding: 20px 40px 20px;
         border-radius: 10px;
         text-align: center;
+        &:hover{
+            background-color: $modal-hover-color;
+        }
     }
 
     &__text{
+        color: $primary-color;
         font-size: 18px;
         &--title{
             text-decoration: underline $secondary-color;
@@ -32,9 +39,7 @@
 
 
     &__button{
-        position: absolute;
-        left: 66px;
-        top: 170px;
+        margin-top: 2vh;
         &--login{
             font-size: 20px;
             text-decoration: underline $secondary-color;
@@ -57,16 +62,16 @@
     }
 
     &__form{
-        position: absolute;
         float: left;
-        top: 200px;
+        margin-left: 23vw;
+        margin-top: 2vh;
+        position: absolute;
         width: 400px;
-        padding-top: 30px;
-            right: 200px;
-            left: 200px;
         &__container{
             margin-top: 40px;
-            
+        }
+        &__group{
+            width: 26vw;
         }
 
     }
