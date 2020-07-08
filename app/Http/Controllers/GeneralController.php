@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\category;
+use App\ productMenu;
 
 class GeneralController extends Controller
 {
@@ -12,7 +13,8 @@ class GeneralController extends Controller
     public function menu()
     {
         $categories= category::all();
-        return view('menu')->with(compact('categories'));
+        $products = productMenu::all();
+        return view('menu')->with(compact('categories','products'));
     }
 
     public function about()

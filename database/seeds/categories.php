@@ -14,27 +14,27 @@ class categories extends Seeder
     {
         category::create([
         	'name' => 'Carnes',
-        	'description' => 'Todo lo que se puede servir en vasos.'
+        	'description' => 'Lo mas apetitoso en carnes del restaurante.'
         ]);
 
         category::create([
             'name' => 'Postres',
-            'description' => 'Lo mas apetitoso del restaurante'
+            'description' => 'Lo mas apetitoso en postres del restaurante'
         ]);
 
         category::create([
             'name' => 'Pastas',
-            'description' => 'Lo mas apetitoso del restaurante'
+            'description' => 'Lo mas apetitoso en pastas  del restaurante'
         ]);
 
         category::create([
             'name' => 'Bebidas',
-            'description' => 'Lo mas apetitoso del restaurante'
+            'description' => 'Todo lo que se puede servir en vasos.'
         ]);
 
         category::create([
             'name' => 'Ensaladas',
-            'description' => 'Lo mas apetitoso del restaurante'
+            'description' => 'Lo mas apetitoso en ensaladas del restaurante'
         ]);
     }
 }
