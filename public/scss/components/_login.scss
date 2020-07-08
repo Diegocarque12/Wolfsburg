@@ -69,15 +69,16 @@
 
     &__form{
         float: right;
-        margin-top: 5vh;
-        margin-right: 25vw;
-        bottom: 5px;
+        margin-top: 2vh;
+        position: absolute;
+        margin-left: 55vw;
         width: 400px;
         &__container{
             margin-top: 40px;
         }
         &__group{
             width: 26vw;
+            padding-left: 1vw;
         }
     }
 
