@@ -35,9 +35,9 @@
                           <li class="dropdown">
                             <ul class="nav__list">
                               <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Menu</a></li>
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Delivery</a></li>
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Our Team</a></li>
-                              <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Contact Us</a></li>
+                              <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Delivery</a></li>
+                              <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
+                              <li class="nav__item" ><a class="nav__link" href="{{ url('contact') }}">Contact Us</a></li>
                               <li class="nav__item" ><a class="nav__link" href="{{ url('login') }}">Login</a></li>
                             </ul>
 
@@ -62,9 +62,9 @@
                         @else
                           <ul class="nav__list">
                             <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Menu</a></li>
-                            <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Delivery</a></li>
-                            <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Our Team</a></li>
-                            <li class="nav__item" ><a class="nav__link" href="{{ url('') }}">Contact Us</a></li>
+                            <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Delivery</a></li>
+                            <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
+                            <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>
                             <li class="nav__item" ><a class="nav__link" href="{{ url('login') }}">Login</a></li>
                           </ul>
                         @endauth
