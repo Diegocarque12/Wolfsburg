@@ -16,19 +16,19 @@
 
   <body>
     <header>
-      <div class="nav nav--header ">
+      <div class="nav nav--header  justify-content-between">
 
             <a href="{{ url('/') }}" class="navbar-brand ">
               <img src="../src/logoCopy.png" class="nav__link--brand" alt="logo-Wolfsburg">
             </a>
 
           
-            <div class="navbar navbar-expand-lg">
+            <div class="navbar navbar-expand-md">
               <button class="nav__btn--colapse" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="">Options</span>
+              <img src="https://img.icons8.com/cotton/48/000000/menu.png"/>
               </button>
 
-             <div class="collapse navbar-collapse" id="navbarNav"> 
+             <div class="collapse navbar-collapse mt-3 mr-5" id="navbarNav"> 
               <ul class="navbar-nav mr-auto">
                 <li class="nav__item active" ><a class="nav__link" href="{{ url('') }}">Home</a></li>
                 <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
