@@ -23,4 +23,6 @@ class GeneralController extends Controller
         return view('form');
     }
 
+    
+
 }
