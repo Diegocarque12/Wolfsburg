@@ -11,7 +11,7 @@
         
         <img src="../src/register.jpg" class="registry__img" alt="">
         <div class="registry__modal">
-            <p class="registry__text">Ya tienes una cuenta?</p>
+            <p class="registry__text">Ya tienes una cuenta? Si es asi que esperas, inicia sesion</p>
             <a href="{{ url('/login') }}" class="btn btn-outline-warning registry__button"><span class="registry__button--login">Iniciar sesion</span></a>
         </div>
         
@@ -22,7 +22,7 @@
             <form class="form-horizontal registry__form__container" method="POST" action="{{ route('register') }}">
                 {{ csrf_field() }}
 
-                <div class="{{ $errors->has('name') ? ' has-error' : '' }} mb-3">
+                <div class="{{ $errors->has('name') ? ' has-error' : '' }} login__form__group mb-3">
                     <label for="name" class=" control-label">Name</label>
 
                     <div class="">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
 
-                <div class="{{ $errors->has('email') ? ' has-error' : '' }} mb-3">
+                <div class="{{ $errors->has('email') ? ' has-error' : '' }} login__form__group mb-3">
                     <label for="email" class=" control-label">E-Mail Address</label>
 
                     <div class="">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-                <div class="{{ $errors->has('password') ? ' has-error' : '' }} mb-3">
+                <div class="{{ $errors->has('password') ? ' has-error' : '' }} login__form__group mb-3">
                     <label for="password" class=" control-label">Password</label>
 
                     <div class="">
@@ -64,7 +64,7 @@
                     </div>
                 </div>
 
-                <div class="mb-3 ">
+                <div class="login__form__group mb-3 ">
                     <label for="password-confirm" class=" control-label">Confirm Password</label>
 
                     <div class="">
