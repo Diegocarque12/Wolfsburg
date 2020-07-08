@@ -31,3 +31,6 @@ Route::post('/products/{id}/delete', 'ProductMenuController@destroy');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/aboutUs', 'GeneralController@about')->name('aboutUs');
+Route::get('/menu', 'GeneralController@menu')->name('menu');
+Route::get('/form', 'GeneralController@form')->name('form');

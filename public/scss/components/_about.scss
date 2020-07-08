@@ -1,0 +1,118 @@
+.about-us{
+    display: flex;
+    margin:0 auto;
+    width: 70vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom:20px;
+    
+   
+    &__title{
+        display: flex;
+        justify-content: center;
+        margin: 20px 20px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+ 
+    &__mark{
+     background-color:$secondary-color ;
+     padding-right: 16px;
+    }
+ 
+    &__container1{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px 20px;
+        padding: 20px;
+       
+        &--img1{
+             max-width: 500px; 
+         }
+ 
+         &--paragrah1{
+             flex: 1;
+             font-size: 17px;
+             text-align: justify;
+         }
+    }
+ 
+    &__container2{
+     box-sizing: border-box;
+     display: flex;
+     align-items:center;
+     flex-wrap: wrap;
+     margin: 20px 20px;
+     padding: 20px;
+    
+     &--img2{
+             max-width: 500px; 
+         }
+         
+         &--paragrah2{
+             flex: 99;
+             font-size: 17px;
+             text-align: justify;
+         }
+     }
+ 
+ 
+ }
+ 
+ @media (max-width:608px){
+     .about-us{  
+         width: 100vw;   
+         &__title{
+             display: flex;
+             justify-content: center;
+             margin: 20px 20px;
+             font-size: 20px;
+             font-weight: bold;
+         }
+         &__container1{
+             display: flex;
+             flex-direction: column;
+             flex-wrap: wrap;
+             align-items: center;
+             margin: 0;
+             padding: 0;
+             margin-bottom: 20px;
+             width: 100%;
+             box-sizing: border-box;
+              &--img1{
+                  width: 100%;
+                  padding: 20px;
+              }
+              &--paragrah1{
+                 font-size: 17px;
+                 padding: 20px;
+             }
+         }
+      
+         &__container2{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          box-sizing: border-box;
+              &--img2{
+                  width: 100%;
+                  padding: 20px;
+              }
+              &--paragrah2{
+                 font-size: 17px;
+                 padding: 20px;
+             }
+          }
+      
+      
+      }
+ }
+ 
+ 
