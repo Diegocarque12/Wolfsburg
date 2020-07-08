@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
-<div class="section">
+<section class="create">
+<div class="create__section">
 	<h1 class="display-4">Crear un nuevo producto</h1>
 
 	<form method="post" action="{{ url('/products') }}">
@@ -37,4 +37,6 @@
 	  
 	</form>
 	</div>
+</section>
+
 @endsection

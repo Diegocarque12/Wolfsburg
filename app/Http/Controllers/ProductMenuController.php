@@ -13,7 +13,7 @@ class ProductMenuController extends Controller
     }
 
     public function productList(){
-    	$products = ProductMenu::orderBy('id', 'ASC')->get();
+		$products = ProductMenu::orderBy('id', 'ASC')->paginate(10);
     	return view('ProductMenu.productList')->with(compact('products'));//listado o index
     }
 
@@ -36,7 +36,7 @@ class ProductMenuController extends Controller
     public function edit($id){
     	$product = productMenu::find($id);
     	$categories = category::where('id', '<>', $product->category_id)->get();
-		return view('ProductMenu.edit')->with(compact('product', 'categories'));//Formulario de registro
+		return view('ProductMenu.actualizar')->with(compact('product', 'categories'));//Formulario de registro
     }
 
     public function update(Request $request, $id){

@@ -23,8 +23,8 @@ Route::get('/products/create', 'ProductMenuController@create');
 Route::post('/products', 'ProductMenuController@store');
 
 //update
-Route::get('/products/{id}/edit', 'ProductMenuController@edit');
-Route::post('/products/{id}/edit', 'ProductMenuController@update');
+Route::get('/products/{id}/actualizar', 'ProductMenuController@edit');
+Route::post('/products/{id}/actualizar', 'ProductMenuController@update');
 
 //delete
 Route::post('/products/{id}/delete', 'ProductMenuController@destroy');
