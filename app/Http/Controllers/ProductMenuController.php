@@ -55,5 +55,7 @@ class ProductMenuController extends Controller
     	$product->delete();
 
     	return back();
-    }
+	}
+	
+	
 }

@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('imports')
+use App\category;
 <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Playball&family=Poppins:wght@500&display=swap" rel="stylesheet">
 @endsection
 
@@ -10,31 +11,39 @@
 
 <div class="menu__container">
     <div class="container container--left">  
+
        <article class="category category--style">
-            <h2 class="category category--title"> Bebidas</h2>
+        @foreach($categories as $category)
+            @if ($category->id == 1)
+            <h2 class="category category--title">{{ $category->name}}</h2>    
             <ul class="category category--list">
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
+            <li class="category category--item"> {{ $category->productMenu->count()}}</li>
             </ul>
+            @endif
+         @endforeach
+        </article>
+
+        
+        <article class="category category--style">
+        @foreach($categories as $category)
+            @if ($category->id == 2)
+            <h2 class="category category--title">{{ $category->name}}</h2>    
+            <ul class="category category--list">
+            <li class="category category--item"> {{ $category->description}}</li>
+            </ul>
+            @endif
+         @endforeach
         </article>
 
         <article class="category category--style">
-            <h2 class="category category--title"> Sopas</h2>
+        @foreach($categories as $category)
+            @if ($category->id == 3)
+            <h2 class="category category--title">{{ $category->name}}</h2>    
             <ul class="category category--list">
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
+            <li class="category category--item"> {{ $category->description}}</li>
             </ul>
-        </article>
-
-        <article class="category category--style">
-            <h2 class="category category--title"> Vinos</h2>
-            <ul class="category category--list">
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            </ul>
+            @endif
+         @endforeach
         </article>
 
     </div>
@@ -42,21 +51,25 @@
     <div class="container container--rigth">
 
     <article class="category category--style">
-            <h2 class="category category--title">Carnes</h2>
+        @foreach($categories as $category)
+            @if ($category->id == 4)
+            <h2 class="category category--title">{{ $category->name}}</h2>    
             <ul class="category category--list">
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
+            <li class="category category--item"> {{ $category->description}}</li>
             </ul>
-         </article>
+            @endif
+         @endforeach
+        </article>
 
-         <article class="category category--style">
-            <h2 class="category category--title"> Postres</h2>
+        <article class="category category--style">
+        @foreach($categories as $category)
+            @if ($category->id == 5)
+            <h2 class="category category--title">{{ $category->name}}</h2>    
             <ul class="category category--list">
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            
+            <li class="category category--item"> {{ $category->description}}</li>
             </ul>
+            @endif
+         @endforeach
         </article>
 
     </div>
