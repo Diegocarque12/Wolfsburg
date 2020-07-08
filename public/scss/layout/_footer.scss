@@ -1,4 +1,9 @@
 .footer{
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    
     &__container{
         background-color: $primary-color;
         height: 53px;
@@ -9,4 +14,11 @@
         padding-top: 16px;
         padding-bottom: 16px;
     }
+
+}
+
+@media (max-width:608px){
+.footer{
+    position: sticky;
+}
 }
