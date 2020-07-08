@@ -23,8 +23,8 @@
             </a>
 
           
-            <div class="navbar navbar-expand-lg ">
-              <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar navbar-expand-lg">
+              <button class="nav__btn--colapse" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="">Options</span>
               </button>
 

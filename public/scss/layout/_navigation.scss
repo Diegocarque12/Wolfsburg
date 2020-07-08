@@ -38,13 +38,13 @@
     }
 
     &__btn{
-        /*&--colapse{
+        &--colapse{
             display: none;
-            @media (max-width: 700px) { 
+            @media (max-width: 990px) { 
                 display: inline;
                 float: inline-end;
                 margin: 3vh 7vw 0vh 0vw;
             }
-        }*/
+        }
     }
 }
