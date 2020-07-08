@@ -1,0 +1,135 @@
+.menu{
+    
+    display: flex;
+    margin:0 auto;
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    &__container{
+       
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 70%;
+        
+    }
+
+    &__title{
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        margin-bottom: 70px;
+        &--mark{
+            background-color:$secondary-color ;
+           
+        }
+    }
+
+}
+
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+   
+
+    &--left{
+        border-right: 1px solid $color-gray2;
+    }
+   
+}
+
+.category{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Biryani', sans-serif;
+    
+    &--style{
+        border-bottom: 4px solid $secondary-color;
+    }
+
+    &--list{
+    list-style: none;
+    font-size: 26px ;
+    
+    }
+
+    &--item{
+      padding-bottom: 5px;  
+    }
+
+    &--title{
+        font-family: 'Playball', cursive;
+        font-weight: bold;
+        font-size: 28px;
+
+    }
+
+}
+
+@media (max-width:608px){
+    .menu{     
+        &__title{
+            font-size: 30px;
+        }
+    
+    }
+    
+    .container{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+       
+    
+        &--left{
+            border-right: none;
+        }
+       
+    }
+    
+    .category{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        font-family: 'Biryani', sans-serif;
+        
+        &--style{
+            border-bottom: 4px solid $secondary-color;
+        }
+    
+        &--list{
+        list-style: none;
+        font-size: 23px ;
+        
+        }
+    
+        &--item{
+          padding-bottom: 5px;  
+        }
+    
+        &--title{
+            font-family: 'Playball', cursive;
+            font-weight: bold;
+            font-size: 26px;
+    
+        }
+    
+    }
+}
