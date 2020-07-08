@@ -13,7 +13,7 @@
     
     <div class="login">
     
-        <div>
+        <div class="login__container">
         
             <img src="../src/login.jpg" class="login__img" alt="">
             <div class="login__modal">
@@ -23,12 +23,12 @@
             
         </div>
 
-        <div class="login__form">
+        <div class=" login__form">
             <h3 class="text-center login__text--title">Iniciar Secion</h3>
             <form class="form-horizontal login__form__container" method="POST" action="{{ route('login') }}">
                 {{ csrf_field() }}
 
-                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }} mb-5">
+                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }} login__form__group mb-5">
                     <label for="email" class="form">Correo electronico</label>
 
                     <div class="pt-2">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
 
-                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }} mb-5">
+                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }} login__form__group mb-5">
                     <label for="password" class="">Contrasena</label>
 
                     <div class="pt-2">
