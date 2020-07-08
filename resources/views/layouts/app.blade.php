@@ -41,7 +41,7 @@
                   </a>
                     <ul class="dropdown-menu">
                       <li>
-                        <a href="{{ url('ProductMenu/productList') }}">Admin</a>
+                        <a href="{{ url('products/productList') }}">Admin</a>
                       </li>
                       <li>
                         <a href="{{ route('logout') }}"

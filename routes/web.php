@@ -16,7 +16,7 @@ Route::get('/', 'ProductMenuController@home');
 Auth::routes();
 
 //read
-Route::get('/products', 'ProductMenuController@productList');
+Route::get('/products/productList', 'ProductMenuController@productList');
 
 //create
 Route::get('/products/create', 'ProductMenuController@create');
