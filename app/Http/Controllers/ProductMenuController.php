@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\ProductMenu;
+use App\productMenu;
 use App\category;
 
 class ProductMenuController extends Controller
@@ -35,7 +35,7 @@ class ProductMenuController extends Controller
     	return view('ProductMenu.productList')->with(compact('products'));//listado o index
     }
 
-    public function create(category $category){
+	public function create(category $category){
     	$categories = category::all();
 		return view('ProductMenu.create')->with(compact('categories'));//Formulario de registro
     }
@@ -50,6 +50,7 @@ class ProductMenuController extends Controller
 
     	return redirect('/products');
     }
+  
 
     public function edit($id){
     	$product = productMenu::find($id);

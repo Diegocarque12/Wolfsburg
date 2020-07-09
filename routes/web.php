@@ -18,10 +18,10 @@ Auth::routes();
 //read
 Route::get('/products/productList', 'ProductMenuController@productList');
 
+
 //create
 Route::get('/products/create', 'ProductMenuController@create');
 Route::post('/products', 'ProductMenuController@store');
-
 
 //delete
 Route::post('/products/{id}/delete', 'ProductMenuController@destroy');
