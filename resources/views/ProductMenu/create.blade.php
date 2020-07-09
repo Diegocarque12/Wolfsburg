@@ -4,7 +4,7 @@
 <section class="section">
     <h1 class="section__title">Agregar producto</h1>
 
-    <form class="form" method="post"  action="{{ url('/products') }}">
+    <form method="post"  action="{{ url('/products') }}" class="form" >
         {{ csrf_field() }}
         <label class="form__label" for="name">Nombre</label>
         <input class="form-control form-control--input" type="text"  name="name"  placeholder="Nombre de producto">

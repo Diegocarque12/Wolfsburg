@@ -67,7 +67,7 @@
                         <label for="password-confirm" class=" login__label">Confirm Password</label>
 
                         <div class="">
-                            <input id="password-confirm" type="password" class="form-control login__input" placeholder="Confirm password" name="password-confirm" required>
+                            <input id="password-confirm" type="password" class="form-control login__input" placeholder="Confirm password" name="password_confirmation" required>
                         </div>
                     </div>
 
