@@ -1,38 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
+<section class="section">
+    <h1 class="section__title">Agregar producto</h1>
 
-<div class="section">
-	<h1 class="display-4">Create a new Product </h1>
+    <form class="form" method="post"  action="{{ url('/products') }}">
+        {{ csrf_field() }}
+        <label class="form__label" for="name">Nombre</label>
+        <input class="form-control form-control--input" type="text"  name="name"  placeholder="Nombre de producto">
 
-	<form method="post" action="{{ url('/products') }}">
-		{{ csrf_field() }}
-	  <div class="form-row">
-	    <div class="form-group col-md-6">
-	      <label for="name">Nombre</label>
-	      <input type="text" class="form-control" name="name" placeholder="Nombre de producto">
-	    </div>
-	    <div class="form-group col-md-3">
-	      <label for="price">Precio</label>
-	      <input type="number" min="0" max="200" class="form-control"name="price" placeholder="Precio de venta">
-	    </div>
-	  </div>
-
-	   	<div class="form-group">
-	      <label for="description">Descripcion</label>
-	      <textarea class="form-control"  name="description" aria-label="Descripcion del producto"></textarea>
-	   	</div>
-
-	    <div class="form-group col-md-3 p-0">
-	      <label for="category_id">Categoria</label>
-	      <select name="category_id" id="input-category" class="form-control">
+        <label class="form__label" for="price">Precio</label>
+        <input  class="form-control form-control--input" type="number" min="0" max="200"  name="price" placeholder="Precio de venta" >
+        
+        <label class="form__label"for="description">Descripcion</label>
+        <textarea  class="form-control form-control--text" aria-label="Descripcion del producto"  name="description" value=""></textarea>
+        
+        <label class="form__label" for="category_id">Categoria</label>
+	      <select class="form-control form-control--select" name="category_id" id="input-category">
 	      	@foreach ($categories as $category)
-	        	<option data-subtext="{{ $category->id }}" value="{{ $category->name }}" >{{ $category->name }}</option>
+	        	<option data-subtext="{{ $category->name }}" value="{{ $category->id }}" >{{ $category->name }}</option>
 	        @endforeach
-	      </select>
-	    </div>
-
-	  <button type="submit" class="btn btn-primary">Create new Product</button>
-	</form>
-
+          </select>
+          
+          <div class="form__buttons">
+          <button type="submit" class="btn btn-primary">Guardar</button>
+	      <a href="{{ url('/products/productList') }}" class="btn btn-secondary">Regresar</a>
+          </div>
+          
+    </form>
+    
+</section>
 @endsection

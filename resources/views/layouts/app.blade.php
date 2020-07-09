@@ -8,7 +8,7 @@
     <title>Wolfsburg</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href=" {{asset('css/stylesheet.css')}}">
     @yield('imports')
     
   </head>
@@ -19,7 +19,7 @@
       <div class="nav nav--header  justify-content-between">
 
             <a href="{{ url('/') }}" class="navbar-brand ">
-              <img src="../src/logoCopy.png" class="nav__link--brand" alt="logo-Wolfsburg">
+              <img src=" {{asset('../src/logoCopy.png')}}" class="nav__link--brand" alt="logo-Wolfsburg">
             </a>
 
           
@@ -41,7 +41,7 @@
                   </a>
                     <ul class="dropdown-menu">
                       <li>
-                        <a href="{{ url('ProductMenu/productList') }}">Admin</a>
+                        <a href="{{ url('products/productList') }}">Admin</a>
                       </li>
                       <li>
                         <a href="{{ route('logout') }}"
