@@ -19,7 +19,7 @@
       <div class="nav nav--header  justify-content-between">
 
             <a href="{{ url('/') }}" class="navbar-brand ">
-              <img src="../src/logoCopy.png" class="nav__link--brand" alt="logo-Wolfsburg">
+              <img src=" {{asset('../src/logoCopy.png')}}" class="nav__link--brand" alt="logo-Wolfsburg">
             </a>
 
           
