@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
-<div class="section">
+<section class="list">
+<div class="list__section">
 	<div class="row justify-content-between m-2">
 		<h1>Lista de Productos del Menu</h1>
 		<a href="{{ url('/products/create') }}" class="btn btn-outline-primary m-3">Create</a>
@@ -31,7 +31,7 @@
 	      	
 	      	<form method="post" action="{{ url('/products/'.$product->id.'/delete') }}">
 	      		{{ csrf_field() }}
-	      		<a href="{{ url('/products/'.$product->id.'/edit') }}" class="btn btn-simple btn-success btn-xs ">Update</a>
+	      		<a href="{{ url('/products/'.$product->id.'/change') }}" class="btn btn-simple btn-success btn-xs ">Update</a>
 	      		<button type="submit" class="btn btn-simple btn-danger btn-xs ">Delete</button>
 	      	</form>
 	      </td>
@@ -39,7 +39,10 @@
 		@endforeach
 	  </tbody>
 	</table>
+	{{$products->links()}}
 
 </div>
+</section>
+
 
 @endsection

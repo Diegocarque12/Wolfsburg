@@ -15,6 +15,7 @@
          border-top: solid 4px $secondary-color;
          border-bottom: solid 4px $secondary-color;
          margin: 0 auto;
+        
      }
  
      &__form{
@@ -33,6 +34,7 @@
             font-size: 20px;
              color:$primary-color;
              font-weight: lighter;
+             border-radius: 5px;
             
              &::placeholder{
                  color:$primary-color;
@@ -51,6 +53,7 @@
              font-size: 20px;
              color:$primary-color;
              font-weight: lighter;
+             border-radius: 5px;
             
              &::placeholder{
                  color:$primary-color;
@@ -72,6 +75,13 @@
              font-size: 20px;
              align-items: center;
              justify-content: center;
+             transition-duration: 0.4s;
+
+             &:hover{
+                background-color:$primary-color  ;
+                color: $secondary-color;
+                border: 1px solid $primary-color;
+             }
            
          }
  
@@ -111,6 +121,11 @@
       
               &--btn{
                  width: 30%;
+                 &:hover{
+                    background-color:$primary-color  ;
+                    color: $secondary-color;
+                    border: 1px solid $primary-color;
+                 }
               }
       
       

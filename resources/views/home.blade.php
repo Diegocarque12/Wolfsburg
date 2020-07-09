@@ -16,9 +16,9 @@
 
   <section class="section--second">
     <p class="section__text--p">Estas son algunas imágenes de nuestros platillos, podrían ser entregados y servidos hasta la puerta de tu casa.</p>
-    <div class="section__img">
+    <div class="section__img ">
       <img src="../src/platillo1.jpg" class="section__img--top-left" alt="">
-      <img src="../src/platillo3.jpg" class="section__img--right mx-auto d-block" alt="">
+      <img src="../src/platillo3.jpg" class=" section__img--right mx-auto d-block" alt="">
       <img src="../src/platillo2.jpg" class="section__img--bott-left" alt="">
     </div>
     

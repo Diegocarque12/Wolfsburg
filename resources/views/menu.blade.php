@@ -10,31 +10,51 @@
 
 <div class="menu__container">
     <div class="container container--left">  
+
        <article class="category category--style">
-            <h2 class="category category--title"> Bebidas</h2>
+        @foreach($categories as $category)
+            @if ($category->id == 1)
+            <h2 class="category category--title">{{ $category->name}}</h2>    
             <ul class="category category--list">
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
+            @foreach($products as $product)
+            @if ($product->category_id == 1)
+            <li class="category category--item"> {{ $product->name}} ....&#36;{{ $product->price}}</li>
+            @endif
+            @endforeach
             </ul>
+            @endif
+         @endforeach
+        </article>
+
+        
+        <article class="category category--style">
+        @foreach($categories as $category)
+            @if ($category->id == 2)
+            <h2 class="category category--title">{{ $category->name}}</h2>    
+            <ul class="category category--list">
+            @foreach($products as $product)
+            @if ($product->category_id == 2)
+            <li class="category category--item"> {{ $product->name}} ....&#36;{{ $product->price}}</li>
+            @endif
+            @endforeach
+            </ul>
+            @endif
+         @endforeach
         </article>
 
         <article class="category category--style">
-            <h2 class="category category--title"> Sopas</h2>
+        @foreach($categories as $category)
+            @if ($category->id == 3)
+            <h2 class="category category--title">{{ $category->name}}</h2>    
             <ul class="category category--list">
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
+            @foreach($products as $product)
+            @if ($product->category_id == 3)
+            <li class="category category--item"> {{ $product->name}} ....&#36;{{ $product->price}}</li>
+            @endif
+            @endforeach
             </ul>
-        </article>
-
-        <article class="category category--style">
-            <h2 class="category category--title"> Vinos</h2>
-            <ul class="category category--list">
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            </ul>
+            @endif
+         @endforeach
         </article>
 
     </div>
@@ -42,21 +62,33 @@
     <div class="container container--rigth">
 
     <article class="category category--style">
-            <h2 class="category category--title">Carnes</h2>
+        @foreach($categories as $category)
+            @if ($category->id == 4)
+            <h2 class="category category--title">{{ $category->name}}</h2>    
             <ul class="category category--list">
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
+            @foreach($products as $product)
+            @if ($product->category_id == 4)
+            <li class="category category--item"> {{ $product->name}} ....&#36;{{ $product->price}}</li>
+            @endif
+            @endforeach
             </ul>
-         </article>
+            @endif
+         @endforeach
+        </article>
 
-         <article class="category category--style">
-            <h2 class="category category--title"> Postres</h2>
+        <article class="category category--style">
+        @foreach($categories as $category)
+            @if ($category->id == 5)
+            <h2 class="category category--title">{{ $category->name}}</h2>    
             <ul class="category category--list">
-            <li class="category category--item">ebfijeqfqef</li>
-            <li class="category category--item">ebfijeqfqef</li>
-            
+            @foreach($products as $product)
+            @if ($product->category_id == 5)
+            <li class="category category--item"> {{ $product->name}} ....&#36;{{ $product->price}}</li>
+            @endif
+            @endforeach
             </ul>
+            @endif
+         @endforeach
         </article>
 
     </div>

@@ -360,6 +360,8 @@ class ComposerStaticInitc2634190e0bd9837b5cf42d99ee63081
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\GeneralController' => __DIR__ . '/../..' . '/app/Http/Controllers/GeneralController.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\ProductMenuController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProductMenuController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -3777,6 +3779,7 @@ class ComposerStaticInitc2634190e0bd9837b5cf42d99ee63081
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
         'products' => __DIR__ . '/../..' . '/database/seeds/products.php',
+        'users' => __DIR__ . '/../..' . '/database/seeds/users.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
