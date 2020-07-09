@@ -36,17 +36,15 @@
                 <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>
                 @if (Route::has('login'))
                   @auth
-                  <li class="nav__item" >
                     <a href="#" class="nav__link dropdown text-white col-auto btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                               Welcome {{ Auth::user()->name }}! <span class="caret"></span>
                     </a>
-                  </li>
                     <ul class="dropdown-menu">
                       <li>
-                        <a href="{{ url('products/productList') }}">Admin</a>
+                        <a class="btn-outline-warning" href="{{ url('products/productList') }}">Admin</a>
                       </li>
                       <li>
-                        <a href="{{ route('logout') }}"
+                        <a class="btn-outline-warning" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                       document.getElementById('logout-form').submit();">
                             Logout
