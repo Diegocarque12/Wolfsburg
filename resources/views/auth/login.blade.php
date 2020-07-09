@@ -8,7 +8,7 @@
     
     <div class="login ">
         <div class="login__grid">
-            <img src="../src/login.jpg" class="login__img" alt="">
+            <img src="{{asset('../src/login.jpg')}}" class="login__img" alt="">
             <div class="login__modal">
                 <p class="login__text">No te encuentras registrado todavia? Puedes hacerlo de forma sencilla y segura</p>
                 <a href="{{ url('/register') }}" class="btn btn-outline-warning login__button"><span class="login__button--registry">Registrarme</span></a>

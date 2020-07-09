@@ -8,7 +8,7 @@
 <div class="registry">
         
     <div class="registry__grid">
-        <img src="../src/register.jpg" class="registry__img" alt="">
+        <img src="{{asset('../src/register.jpg')}}" class="registry__img" alt="">
         <div class="registry__modal">
             <p class="registry__text">Ya tienes una cuenta? Si es asi que esperas, inicia sesion</p>
             <a href="{{ url('/login') }}" class="btn btn-outline-warning registry__button"><span class="registry__button--login">Iniciar sesion</span></a>
