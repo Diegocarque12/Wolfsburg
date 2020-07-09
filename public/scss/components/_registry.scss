@@ -1,29 +1,58 @@
 .registry{
-
-    margin-top: 20px;
-    margin-bottom: 30px;
-    height: 100vh;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
     &__img{
-        float: right;
         height: 100vh;
         width: 450px;
         min-height: 480px;
         max-height: 550px;
-        margin-right: 12vw;
         border-radius: 0px 20px 20px 0px;
+        grid-column: 3 / 4 ;
+        grid-row: 1;
+        @media (max-width: 1300px) { 
+            display: none;
+        }
     }
 
     &__modal{
         background-color: $modal-opacity-color;
-        width: 260px;
-        height: 115px;
-        float: right;
-        position: relative;
-        left: 22vw;
-        top: 15vh;
+        min-width: 200px;
+        max-width: 250px;
+        height: 140px;
+        grid-row: 1;
+        grid-column: 3;
         padding: 20px 40px 20px;
         border-radius: 10px;
         text-align: center;
+        margin-top: 17vh;
+        margin-left: 7vw;
+        @media (max-width: 1300px) { 
+            margin-top: 0px;
+            grid-column: 1;
+            grid-row: 3;
+            height: 165px;
+            width: 70vh;
+            max-width: 500px;
+        }
+        @media (max-width: 830px) { 
+            margin-top: 0px;
+            grid-column: 1;
+            grid-row: 3;
+            order: 2;
+            width: 60vw;
+            height: 20vh;
+            max-width: 400px;
+        }
+        @media (max-width: 528px) { 
+            margin-top: 0px;
+            grid-column: 1;
+            grid-row: 3;
+            order: 2;
+            width: 60vw;
+            height: 35vh;
+            max-width: 500px;
+        }
+        
         &:hover{
             background-color: $modal-hover-color;
         }
@@ -34,19 +63,65 @@
         font-size: 18px;
         &--title{
             text-decoration: underline $secondary-color;
+            grid-row: 1;
+            grid-column: 2 / 3;
+            margin-bottom: 5vh;
+            margin-left: 8vw;
+            @media (max-width: 1350px) { 
+                padding-left: 0px;
+                margin-left: 0px;
+                text-align: start;
+            }
+            @media (max-width: 1300px) {
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 830px) { 
+            margin-bottom: 4vh;
+        }
+        @media (max-width: 382px) { 
+            margin-bottom: 1vh;
+        }
+    }
+    &--text{
+        @media (max-width: 528px) { 
+            margin-bottom: 1vh;
         }
     }
 
+    &__grid{
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10% ;
+        grid-template-rows: 5% 95%;
+        
+        @media (max-width: 1300px) { 
+            grid-template-columns: 1%;
+            grid-template-rows: 5% 50% 35%;
+            justify-content: center;
+        }
+        @media (max-width: 830px) { 
+            grid-template-columns: 1fr;
+            grid-template-rows: 5% 2fr 1fr;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
 
     &__button{
         margin-top: 2vh;
+        min-width: 150px;
         &--login{
             font-size: 20px;
             text-decoration: underline $secondary-color;
             &:hover{
                 text-decoration: none;
             }
+            
         }
+        
         &--reg{
             background-color: $secondary-color;
             padding: 8px;
@@ -54,26 +129,93 @@
             border-radius: 5px;
             color: $black-back-font-color;
             font-size: large;
+            margin-right: 5vw;
             &:hover{
-                background-color: $hover-button-color;
                 color: $primary-color;
+                background-color: $hover-button-color;
+            }
+            @media (max-width: 1300px) { 
+                margin-right: 0px;
+                
+            }
+        }
+    }
+
+    &__container{
+        &--sub{
+            text-align: center;
+            @media (max-width: 1300px) { 
+                text-align: center;
+                padding-bottom: 5vh;
+            }
+            @media (max-width: 830px) { 
+                text-align: center;
+                padding-bottom: 5vh;
             }
         }
     }
 
     &__form{
-        float: left;
-        margin-left: 23vw;
+        grid-row: 1;
+        grid-column: 2/3;
+        margin-left: 10vw;
         margin-top: 2vh;
-        position: absolute;
-        width: 400px;
+        @media (max-width:1300px){
+            grid-row: 2;
+            grid-column: 2;
+            order: 1;
+            margin-left: 3vw;
+        }
+        @media (max-width: 830px) { 
+            grid-row: 2;
+            grid-column: 1;
+            padding: 0vh 2vw;
+            order: 1;
+            margin-left: 3vw;
+        }
         &__container{
-            margin-top: 40px;
+            grid-column: 0;
+            @media (max-width: 830px){
+                display: grid;
+                justify-content: center;
+            }
+            &--input{
+                margin-top: 40px;
+                @media (max-width: 1300px){
+                    display: grid;
+                    justify-content: center;
+                }
+            }
         }
         &__group{
-            width: 26vw;
+            max-width: 345px;
+            @media (max-width: 1300px){
+                min-width: 500px;
+                max-width: 523px;
+            }
+            @media (max-width: 830px){
+                min-width: 323px;
+                max-width: 515px;
+            }
         }
-
     }
 
+    &__label{
+        .login__form__group &{
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+
+    &__input{
+        .login__form__group &{
+            border-radius: 10px;
+            background-color: $color-gray;
+            min-width: 323px;
+        }
+        @media (max-width: 830px){
+            min-width: 323px;
+            max-width: 500px;
+        }
+    }
 }
