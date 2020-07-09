@@ -27,6 +27,8 @@
             background-color:$secondary-color ;
            
         }
+
+        
     }
 
 }
@@ -67,12 +69,19 @@
 
     &--item{
       padding-bottom: 5px;  
+      &:hover{
+        font-weight: bold;
+      }
     }
 
     &--title{
         font-family: 'Playball', cursive;
         font-weight: bold;
         font-size: 28px;
+
+        &:hover{
+            text-shadow: 2px 2px 2px $hover-category-color ;
+         }
 
     }
 
