@@ -41,7 +41,7 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="btn-outline-warning" href="{{ url('products/productList') }}">Admin</a>
+                        <a class="btn-outline-warning" href="{{ url('/products') }}">Admin</a>
                       </li>
                       <li>
                         <a class="btn-outline-warning" href="{{ route('logout') }}"
