@@ -67,6 +67,9 @@
         @media (max-width: 830px) { 
             margin-bottom: 4vh;
         }
+        &--forgot{
+            min-width: 210px;
+        }
     }
 
     &__grid{
@@ -89,6 +92,7 @@
     }
 
     &__button{
+        min-width: 145px;
         &--registry{
             font-size: 20px;
             text-decoration: underline $secondary-color;

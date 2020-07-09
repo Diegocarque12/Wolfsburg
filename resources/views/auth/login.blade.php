@@ -67,7 +67,7 @@
 
                         
                     </div>
-                    <a class="btn btn-link mt-5" href="{{ route('password.request') }}">
+                    <a class="btn btn-link mt-5 login__text--forgot" href="{{ route('password.request') }}">
                             Olvidaste tu contrasena?
                         </a>
                 </div>
