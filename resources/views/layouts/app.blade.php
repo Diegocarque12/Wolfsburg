@@ -28,7 +28,7 @@
               <img src="https://img.icons8.com/cotton/48/000000/menu.png"/>
               </button>
 
-             <div class="collapse navbar-collapse mt-3 mr-5" id="navbarNav"> 
+             <div class=" collapse navbar-collapse mt-3 mr-5" id="navbarNav"> 
               <ul class="navbar-nav mr-auto">
                 <li class="nav__item active" ><a class="nav__link" href="{{ url('') }}">Home</a></li>
                 <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
@@ -36,10 +36,10 @@
                 <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>
                 @if (Route::has('login'))
                   @auth
-                    <a href="#" class="nav__link dropdown text-white col-auto btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                    <a href="#" class="text-white btn btn-outline-warning dropdown-toggle nav__link nav__link--logout" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                               Welcome {{ Auth::user()->name }}! <span class="caret"></span>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-right">
                       <li>
                         <a class="btn-outline-warning" href="{{ url('/products') }}">Admin</a>
                       </li>

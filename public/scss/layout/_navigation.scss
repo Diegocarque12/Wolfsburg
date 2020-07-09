@@ -5,10 +5,13 @@
         background-color: $nav-back-color;
     }
 
+    
     &__list{
         list-style: none;
         padding-top: 45px;
-        float: right;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
         &:last-child{
             margin-right: 4rem;
         }
@@ -41,10 +44,15 @@
                 margin-right: 10%;
             }
         }
-
+        &:last-child{
+            margin-right: 2vw;
+        }
         &:hover{
             text-decoration: none;
             color: $secondary-color;
+        }
+        &--logout{
+            margin-top: -1vh;
         }
     }
 
@@ -60,7 +68,7 @@
             &:focus{
                 outline:none;
             }
-            @media (max-width: 768px){ 
+            @media (max-width: 767px){ 
                 display: inline;
                 float: inline-end;
                 margin: 2vh 5vw 2vh 0vw;
