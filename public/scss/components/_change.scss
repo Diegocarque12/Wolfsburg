@@ -5,10 +5,89 @@
     width: 50vw;
     align-items: center;
     
+    &__title{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    }
 }
 
 .form{
     display: flex;
     flex-direction: column;
     width: 100%; 
+
+    &__label{
+        font-size: 18px;
+        color:$primary-color;
+    }
+
+    &__buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        
+    }
+
+    
+}
+
+.form-control{
+
+    font-size: 18px;
+
+    &--select{
+        font-size: 18px;
+        margin-bottom: 30px;
+        border-radius: 6px;
+    }
+    &--text{
+        font-size: 18px;
+        margin-bottom: 30px;
+        border-radius: 6px;
+    }
+   
+    &--input{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        height: 40px;
+        font-size: 18px;
+
+
+    }
+
+}
+
+.btn{
+    width: 30%;
+}
+
+@media(max-width:608px){
+    .btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }  
+
+    .section{
+        &__title{
+        font-size: 28px;
+        }
+    }
+
+    .form-control{
+        font-size: 14px;
+        &--select{
+            font-size: 14px;
+        }
+        &--text{
+            font-size: 14px;
+        }
+       
+        &--input{   
+            font-size: 14px;
+        }
+    
+    }
 }
