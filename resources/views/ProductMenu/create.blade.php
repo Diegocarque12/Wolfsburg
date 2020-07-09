@@ -1,42 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="create">
-<div class="create__section">
-	<h1 class="display-4">Crear un nuevo producto</h1>
+<section class="section">
+    <h1>Agregar producto</h1>
 
-	<form method="post" action="{{ url('/products') }}">
-		{{ csrf_field() }}
-	  <div class="form-row">
-	    <div class="form-group col-md-6">
-	      <label for="name">Nombre</label>
-	      <input type="text" class="form-control" name="name" placeholder="Nombre de producto">
-	    </div>
-	    <div class="form-group col-md-3">
-	      <label for="price">Precio</label>
-	      <input type="number" min="0" max="200" class="form-control"name="price" placeholder="Precio de venta">
-	    </div>
-	  </div>
+    <form class="form" method="post"  action="{{ url('/products') }}">
+        {{ csrf_field() }}
+        <label for="name">Nombre</label>
+        <input type="text"  name="name"  placeholder="Nombre de producto">
 
-	   	<div class="form-group">
-	      <label for="description">Descripcion</label>
-	      <textarea class="form-control"  name="description" aria-label="Descripcion del producto"></textarea>
-	   	</div>
-
-	    <div class="form-group col-md-3 p-0">
-	      <label for="category_id">Categoria</label>
-	      <select name="category_id" id="input-category" class="form-control">
+        <label for="price">Precio</label>
+        <input type="number" min="0" max="200"  name="price" placeholder="Precio de venta" >
+        
+        <label for="description">Descripcion</label>
+        <textarea  aria-label="Descripcion del producto"  name="description" value=""></textarea>
+        
+        <label for="category_id">Categoria</label>
+	      <select name="category_id" id="input-category">
 	      	@foreach ($categories as $category)
 	        	<option data-subtext="{{ $category->name }}" value="{{ $category->id }}" >{{ $category->name }}</option>
 	        @endforeach
-	      </select>
-	    </div>
-	 
-	  <button type="submit" class="btn btn-primary">Guardar</button>
+          </select>
+          
+          <button type="submit" class="btn btn-primary">Guardar</button>
 	  <a href="{{ url('/products/productList') }}" class="btn btn-secondary">Regresar</a>
-	  
-	</form>
-	</div>
+    </form>
+    
 </section>
-
 @endsection

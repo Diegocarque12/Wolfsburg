@@ -22,9 +22,6 @@ Route::get('/products/productList', 'ProductMenuController@productList');
 Route::get('/products/create', 'ProductMenuController@create');
 Route::post('/products', 'ProductMenuController@store');
 
-//update
-Route::get('/products/{id}/actualizar', 'ProductMenuController@edit');
-Route::post('/products/{id}/actualizar', 'ProductMenuController@update');
 
 //delete
 Route::post('/products/{id}/delete', 'ProductMenuController@destroy');
@@ -34,3 +31,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/aboutUs', 'GeneralController@about')->name('aboutUs');
 Route::get('/menu', 'GeneralController@menu')->name('menu');
 Route::get('/form', 'GeneralController@form')->name('form');
+
+
+//update 
+Route::get('/products/{id}/change', 'ProductMenuController@change');
+Route::post('/products/{id}/change', 'ProductMenuController@update');

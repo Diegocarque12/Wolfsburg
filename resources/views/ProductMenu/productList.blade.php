@@ -31,7 +31,7 @@
 	      	
 	      	<form method="post" action="{{ url('/products/'.$product->id.'/delete') }}">
 	      		{{ csrf_field() }}
-	      		<a href="{{ url('/products/'.$product->id.'/actualizar') }}" class="btn btn-simple btn-success btn-xs ">Update</a>
+	      		<a href="{{ url('/products/'.$product->id.'/change') }}" class="btn btn-simple btn-success btn-xs ">Update</a>
 	      		<button type="submit" class="btn btn-simple btn-danger btn-xs ">Delete</button>
 	      	</form>
 	      </td>
