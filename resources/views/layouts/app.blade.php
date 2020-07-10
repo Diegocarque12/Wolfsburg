@@ -39,12 +39,12 @@
                     <a href="#" class="text-white  nav__link nav__link--logout" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                               Welcome {{ Auth::user()->name }}! <span class="caret"></span>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                      <li>
-                        <a class="btn-outline-warning" href="{{ url('/products') }}">Admin</a>
+                    <ul class="dropdown-menu dropdown-menu-right nav__drop">
+                      <li class="">
+                        <a class="nav__drop__item" href="{{ url('/products') }}">Admin</a>
                       </li>
                       <li>
-                        <a class="btn-outline-warning" href="{{ route('logout') }}"
+                        <a class="nav__drop__item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                       document.getElementById('logout-form').submit();">
                             Logout

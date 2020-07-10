@@ -55,21 +55,43 @@
             color: $secondary-color;
         }
         &--logout{
+            margin-top: -1vh;
             padding: 3px;
             border: solid 1px #ff9800;
+            color: orange;
             border-radius: 4px;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            color: orange;
             &:hover {
                 background: #ff9800;
                 color: white;
               }
             @media (max-width: 768px) { 
+                padding: 0px;
                 margin-top: 1vh;
-                
             }
+        }
+    }
+
+    &__drop{
+        background-color: transparent;
+        right: 5vw;
+        border: solid 2px #ff9800;
+        &__item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 1vh;
+            color: white;
+            &:hover{
+                text-decoration: none;
+                color: #ff9800;
+            }
+        }
+        @media (max-width: 768px) { 
+            padding: 0px;
+            margin-top: 1vh;
         }
     }
 
