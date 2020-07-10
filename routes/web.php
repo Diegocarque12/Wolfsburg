@@ -12,7 +12,7 @@
 */
 Auth::routes();
 //menu principal
-Route::get('/', 'HomeController@index');
+Route::get('/', 'ProductMenuController@home');
 Route::get('/aboutUs', 'GeneralController@about')->name('aboutUs');
 Route::get('/menu', 'GeneralController@menu')->name('menu');
 Route::get('/form', 'GeneralController@form')->name('form');
