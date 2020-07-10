@@ -46,13 +46,30 @@
         }
         &:last-child{
             margin-right: 2vw;
+            @media (max-width: 768px) { 
+                margin-bottom: 2vh;
+            }
         }
         &:hover{
             text-decoration: none;
             color: $secondary-color;
         }
         &--logout{
-            margin-top: -1vh;
+            padding: 3px;
+            border: solid 1px #ff9800;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: orange;
+            &:hover {
+                background: #ff9800;
+                color: white;
+              }
+            @media (max-width: 768px) { 
+                margin-top: 1vh;
+                
+            }
         }
     }
 

@@ -36,7 +36,7 @@
                 <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>
                 @if (Route::has('login'))
                   @auth
-                    <a href="#" class="text-white btn btn-outline-warning dropdown-toggle nav__link nav__link--logout" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                    <a href="#" class="text-white  nav__link nav__link--logout" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                               Welcome {{ Auth::user()->name }}! <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right">
