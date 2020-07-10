@@ -1,8 +1,12 @@
+html{
+    overflow-x: hidden;
+}
 body {
     font-family: Arial, sans-serif;
     font-size: 14px;
     color: $primary-color;
     width: 100vw;
+    overflow-x: hidden;
    
 }
 

@@ -10,13 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Auth::routes();
 //menu principal
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index');
 Route::get('/aboutUs', 'GeneralController@about')->name('aboutUs');
 Route::get('/menu', 'GeneralController@menu')->name('menu');
 Route::get('/form', 'GeneralController@form')->name('form');
-Auth::routes();
+
 
 //crud
 //read

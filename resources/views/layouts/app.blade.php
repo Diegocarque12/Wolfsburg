@@ -30,7 +30,7 @@
 
              <div class=" collapse navbar-collapse mt-3 mr-5" id="navbarNav"> 
               <ul class="navbar-nav mr-auto">
-                <li class="nav__item active" ><a class="nav__link" href="{{ url('') }}">Home</a></li>
+                <li class="nav__item active" ><a class="nav__link" href="{{ url('/') }}">Home</a></li>
                 <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
                 <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
                 <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>

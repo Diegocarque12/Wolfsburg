@@ -10,9 +10,7 @@ use App\category;
 
 class ProductMenuController extends Controller
 {
-    public function home(){
-    	return view('home');
-    }
+    
 
     public function productList(){
     	$products = ProductMenu::orderBy('id', 'ASC')->paginate(10);
