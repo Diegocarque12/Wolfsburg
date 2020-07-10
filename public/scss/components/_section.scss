@@ -42,13 +42,7 @@
                 float: right;
                 @media (max-width: 1535px) {
                     border: 1vh solid $black-back-font-color;
-                }/*
-                @media (max-width: 1380px) {
-                    position: relative;
-                    margin-top: 4%;
-                    margin-bottom: 4%;
-                    border: 1vh solid $black-back-font-color;
-                }*/
+                }
                 @media (max-width: 769px) {
                     height: 100vh; 
                     width: 100%;
@@ -90,26 +84,27 @@
             &--h2{
                 color: $secondary-color;
                 font-family: 'pacifico', cursive;
-                font-size: 55px;
+                font-size: 4rem;
             }
             &--h3{
                 color: $black-back-font-color;
                 font-family: 'Poppins', sans-serif;
-                font-size: 90px;
+                font-size: 5rem;
                 @media (max-width: 768px) { 
                     color: $primary-color;
+                    font-size: 4rem;
                 }
             }
             &--p{
                 color: $black-back-font-color;
-                font-size: 25px;
+                font-size: 1.5rem;
                 @media (max-width: 768px) { 
                     color: $primary-color;
                 }
             }
             &--a{
                 color: $third-color;
-                font-size: 25px;
+                font-size: 1.5rem;
                 background-color: $secondary-color;
                 padding: 8px;
                 border-radius: 10px;
@@ -121,7 +116,7 @@
         }
         .section--second &{
             &--p{
-                font-size: 40px;
+                font-size: 2rem;
                 margin-left: 8vw;
                 margin-right: 8vw;
                 text-align: center;
@@ -132,7 +127,7 @@
             &--p{
                 color: $primary-color;
                 font-family: podkova, serif;
-                font-size: 35px;
+                font-size: 2rem;
                 text-align: center;
                 padding-left: 11vw;
                 padding-right: 11vw;
