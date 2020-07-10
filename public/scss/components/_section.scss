@@ -136,6 +136,11 @@
                 margin-right: 8vw;
                 text-align: center;
                 margin-bottom: 80px;
+                @media (max-width: 768px) { 
+                    font-size: 1.5rem;
+                    margin-left: 4vw;
+                    margin-right: 4vw;
+                }
             }
         }
         .section--delivery-info &{
@@ -150,6 +155,11 @@
                 margin-right: 8vw;
                 padding-top: 50px;
                 margin-right: 70px;
+                @media (max-width: 768px) { 
+                    font-size: 1.5rem;
+                    margin-left: 4vw;
+                    margin-right: 4vw;
+                }
             }
         }
     }
