@@ -23,6 +23,11 @@
                     border-left: 1vh solid $black-back-font-color;
                     border-right: 1vh solid $black-back-font-color;
                 }
+                @media (max-width: 450px) {
+                    height: 5%; 
+                    width: 100%;
+                    border: 1vh solid $black-back-font-color;
+                }
             }
             &--bott-left{
                 height: 422px;
@@ -34,6 +39,11 @@
                     border-left: 1vh solid $black-back-font-color;
                     border-right: 1vh solid $black-back-font-color;
                 }
+                @media (max-width: 450px) {
+                    height: 5%; 
+                    width: 100%;
+                    border: 1vh solid $black-back-font-color;
+                }
             }
             &--right{
                 width: 50%;
@@ -42,15 +52,14 @@
                 float: right;
                 @media (max-width: 1535px) {
                     border: 1vh solid $black-back-font-color;
-                }/*
-                @media (max-width: 1380px) {
-                    position: relative;
-                    margin-top: 4%;
-                    margin-bottom: 4%;
-                    border: 1vh solid $black-back-font-color;
-                }*/
+                }
                 @media (max-width: 769px) {
                     height: 100vh; 
+                    width: 100%;
+                    border: 1vh solid $black-back-font-color;
+                }
+                @media (max-width: 450px) {
+                    height: 50%; 
                     width: 100%;
                     border: 1vh solid $black-back-font-color;
                 }
@@ -90,26 +99,27 @@
             &--h2{
                 color: $secondary-color;
                 font-family: 'pacifico', cursive;
-                font-size: 55px;
+                font-size: 4rem;
             }
             &--h3{
                 color: $black-back-font-color;
                 font-family: 'Poppins', sans-serif;
-                font-size: 90px;
+                font-size: 5rem;
                 @media (max-width: 768px) { 
                     color: $primary-color;
+                    font-size: 4rem;
                 }
             }
             &--p{
                 color: $black-back-font-color;
-                font-size: 25px;
+                font-size: 1.5rem;
                 @media (max-width: 768px) { 
                     color: $primary-color;
                 }
             }
             &--a{
                 color: $third-color;
-                font-size: 25px;
+                font-size: 1.5rem;
                 background-color: $secondary-color;
                 padding: 8px;
                 border-radius: 10px;
@@ -121,18 +131,23 @@
         }
         .section--second &{
             &--p{
-                font-size: 40px;
+                font-size: 2rem;
                 margin-left: 8vw;
                 margin-right: 8vw;
                 text-align: center;
                 margin-bottom: 80px;
+                @media (max-width: 768px) { 
+                    font-size: 1.5rem;
+                    margin-left: 4vw;
+                    margin-right: 4vw;
+                }
             }
         }
         .section--delivery-info &{
             &--p{
                 color: $primary-color;
                 font-family: podkova, serif;
-                font-size: 35px;
+                font-size: 2rem;
                 text-align: center;
                 padding-left: 11vw;
                 padding-right: 11vw;
@@ -140,6 +155,11 @@
                 margin-right: 8vw;
                 padding-top: 50px;
                 margin-right: 70px;
+                @media (max-width: 768px) { 
+                    font-size: 1.5rem;
+                    margin-left: 4vw;
+                    margin-right: 4vw;
+                }
             }
         }
     }
