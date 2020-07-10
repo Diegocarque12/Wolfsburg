@@ -23,7 +23,7 @@
     </div>
     
     <div class="section--delivery-info">
-      <p class="section__text--p">Si quieres hacer una orden puedes contactarnos al número: (+506) 2268 1546</p>
+      <p class="section__text--p">Si quieres hacer una orden, puedes contactarnos al número: (+506) 2268 1546</p>
     </div>
   </section>
 

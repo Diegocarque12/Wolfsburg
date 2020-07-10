@@ -10,7 +10,7 @@
     <div class="registry__grid">
         <img src="{{asset('../src/register.jpg')}}" class="registry__img" alt="">
         <div class="registry__modal">
-            <p class="registry__text">Ya tienes una cuenta? Si es asi que esperas, inicia sesion</p>
+            <p class="registry__text">¿Ya tienes una cuenta? Si es así, ¿Qué esperas? Inicia sesión</p>
             <a href="{{ url('/login') }}" class="btn btn-outline-warning registry__button"><span class="registry__button--login">Iniciar sesion</span></a>
         </div>
 
@@ -22,10 +22,10 @@
                 <div class="login__form__container">
 
                     <div class="{{ $errors->has('name') ? ' has-error' : '' }} login__form__group mb-3">
-                        <label for="name" class=" login__label">Name</label>
+                        <label for="name" class=" login__label">Nombre</label>
 
                         <div class="">
-                            <input id="name" type="text" class="form-control login__input" placeholder="Username" name="name" value="{{ old('name') }}" required autofocus>
+                            <input id="name" type="text" class="form-control login__input" placeholder="Nombre de usuario" name="name" value="{{ old('name') }}" required autofocus>
 
                             @if ($errors->has('name'))
                                 <span class="help-block">
@@ -36,10 +36,10 @@
                     </div>
 
                     <div class="{{ $errors->has('email') ? ' has-error' : '' }} login__form__group mb-3">
-                        <label for="email" class=" login__label">E-Mail Address</label>
+                        <label for="email" class=" login__label">Correo electrónico</label>
 
                         <div class="">
-                            <input id="email" type="email" class="form-control login__input" placeholder="Email" name="email" value="{{ old('email') }}" required>
+                            <input id="email" type="email" class="form-control login__input" placeholder="ejemplo@dominio.com" name="email" value="{{ old('email') }}" required>
 
                             @if ($errors->has('email'))
                                 <span class="help-block">
@@ -50,10 +50,10 @@
                     </div>
 
                     <div class="{{ $errors->has('password') ? ' has-error' : '' }} login__form__group mb-3">
-                        <label for="password" class=" login__label">Password</label>
+                        <label for="password" class=" login__label">Contraseña</label>
 
                         <div class="">
-                            <input id="password" type="password" class="form-control login__input" placeholder="Password" name="password" required>
+                            <input id="password" type="password" class="form-control login__input" placeholder="Contraseña" name="password" required>
 
                             @if ($errors->has('password'))
                                 <span class="help-block">
@@ -64,10 +64,10 @@
                     </div>
 
                     <div class="login__form__group mb-3 ">
-                        <label for="password-confirm" class=" login__label">Confirm Password</label>
+                        <label for="password-confirm" class=" login__label">Confirmar contraseña</label>
 
                         <div class="">
-                            <input id="password-confirm" type="password" class="form-control login__input" placeholder="Confirm password" name="password_confirmation" required>
+                            <input id="password-confirm" type="password" class="form-control login__input" placeholder="Confirmar contraseña" name="password_confirmation" required>
                         </div>
                     </div>
 

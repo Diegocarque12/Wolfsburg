@@ -10,18 +10,18 @@
         <div class="login__grid">
             <img src="{{asset('../src/login.jpg')}}" class="login__img" alt="">
             <div class="login__modal">
-                <p class="login__text">No te encuentras registrado todavia? Puedes hacerlo de forma sencilla y segura</p>
+                <p class="login__text">¿No te encuentras registrado todavía? Puedes hacerlo de forma sencilla y segura</p>
                 <a href="{{ url('/register') }}" class="btn btn-outline-warning login__button"><span class="login__button--registry">Registrarme</span></a>
             </div>
 
     <div class=" login__form ">
-        <h3 class="login__text--title">Iniciar Secion</h3>
+        <h3 class="login__text--title">Iniciar Seción</h3>
             <form class=" " method="POST" action="{{ route('login') }}">
                 {{ csrf_field() }}
 
                     <div class="login__form__container">
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }} login__form__group mb-5">
-                            <label for="email" class="login__label">Correo electronico</label>
+                            <label for="email" class="login__label">Correo electrónico</label>
 
                             <div class="pt-2">
                                 <input id="email" type="email" class="form-control login__input" name="email" placeholder="Correo electronico" value="{{ old('email') }}" required autofocus>
@@ -35,7 +35,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }} login__form__group mb-5">
-                            <label for="password" class="login__label">Contrasena</label>
+                            <label for="password" class="login__label">Contraseña</label>
 
                             <div class="pt-2">
                                 <input id="password" type="password" class="form-control login__input" placeholder="Contrasena" name="password" required>
@@ -52,7 +52,7 @@
                             <div class="">
                                 <div class="checkbox ">
                                     <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Recordar mi cuenta
                                     </label>
                                 </div>
                             </div>
@@ -62,13 +62,13 @@
                 <div class="login__container--sub">
                     <div class=" mt-5">
                         <button type="submit" class="login__button--log">
-                            Iniciar Sesion
+                            Iniciar Sesión
                         </button>
 
                         
                     </div>
                     <a class="btn btn-link mt-5 login__text--forgot" href="{{ route('password.request') }}">
-                            Olvidaste tu contrasena?
+                            ¿Olvidaste tu contraseña?
                         </a>
                 </div>
             </form>
