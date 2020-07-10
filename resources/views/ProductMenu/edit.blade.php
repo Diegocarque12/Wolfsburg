@@ -7,7 +7,7 @@
 <section class="section">
     <h1 class="section__title">Actualizar producto</h1>
 
-    <form class="form" method="post"  action="{{ url('/products/'.$product->id.'/change') }}">
+    <form class="form" method="post"  action="{{ url('/products/'.$product->id.'/edit') }}">
         {{ csrf_field() }}
         <label class="form__label" for="name">Nombre</label>
         <input class="form-control form-control--input" type="text"  name="name"  value="{{ $product->name }}">
@@ -27,7 +27,7 @@
         </select>
         <div class="form__buttons">
         <button type="submit" class="btn btn-primary">Actualizar</button>
-        <a href="{{ url('/products/productList') }}" class="btn btn-secondary">Regresar</a>
+        <a href="{{ url('/products') }}" class="btn btn-secondary">Regresar</a>
         </div>
     </form>
     

@@ -24,7 +24,7 @@
           
           <div class="form__buttons">
           <button type="submit" class="btn btn-primary">Guardar</button>
-	      <a href="{{ url('/products/productList') }}" class="btn btn-secondary">Regresar</a>
+	      <a href="{{ url('/products') }}" class="btn btn-secondary">Regresar</a>
           </div>
           
     </form>
