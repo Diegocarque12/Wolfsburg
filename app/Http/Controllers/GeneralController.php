@@ -27,6 +27,12 @@ class GeneralController extends Controller
         return view('form');
     }
 
+    public function help()
+    {
+        return view('help');
+    }
+
+
     
 
 }

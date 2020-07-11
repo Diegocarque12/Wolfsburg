@@ -6,9 +6,11 @@
     <meta name="description" content="Wolfsburg Restaurant Official Page">
     <meta name="author" content="Yuvania Castillo & Diego Carvajal">
     <title>Wolfsburg</title>
-
+     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href=" {{asset('css/stylesheet.css')}}">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     @yield('imports')
     
   </head>
@@ -34,6 +36,7 @@
                 <li class="nav__item" ><a class="nav__link" href="{{ url('menu') }}">Menu</a></li>
                 <li class="nav__item" ><a class="nav__link" href="{{ url('aboutUs') }}">Our Team</a></li>
                 <li class="nav__item" ><a class="nav__link" href="{{ url('form') }}">Contact Us</a></li>
+                <li class="nav__item" ><a class="nav__link" href="{{ url('help') }}">Help</a></li>
                 @if (Route::has('login'))
                   @auth
                     <a href="#" class="text-white  nav__link nav__link--logout" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
@@ -75,6 +78,8 @@
       @yield('content')
 
     </div> <!-- Container -->
+  
+
 
     <footer class="footer">
       <div class="footer__container">

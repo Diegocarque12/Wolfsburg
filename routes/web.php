@@ -32,3 +32,8 @@ Route::post('/products/{id}/edit', 'ProductMenuController@update');
 
 //delete
 Route::post('/products/{id}/delete', 'ProductMenuController@destroy');
+
+
+//help
+
+Route::get('/help', 'GeneralController@help')->name('help');
