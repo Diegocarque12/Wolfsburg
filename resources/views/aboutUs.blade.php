@@ -5,7 +5,7 @@
 <section class="about-us">
         <h1 class="about-us__title"> <span class="about-us__mark">Nuestro </span>   Equipo</h1>
         <div class="about-us__container1 ">
-            <img class="about-us__container1 about-us__container1--img1" src="{{assets('../src/chef1.jpg')}}" alt="">
+            <img class="about-us__container1 about-us__container1--img1" src="{{asset('../src/chef1.jpg')}}" alt="">
             <p class="about-us__container1 about-us__container1--paragrah1">
             Nuestro restaurante es considerado como el mejor de la ciudad de Wolfsburgo, ciudad al norte de Alemania,
              donde se encuentra situado nuestro restaurante.
@@ -19,7 +19,7 @@
             En general, el ambiente de la cocina es cooperativo y busca que todos los integrantes 
             mantengan la misma visión, dar lo mejor de cada uno, como si fuera el último platillo que fueran a preparar.
             </p>
-            <img class="about-us__container2 about-us__container2--img2"  src="{{assets('../src/chef2.jpg')}}" alt="">
+            <img class="about-us__container2 about-us__container2--img2"  src="{{asset('../src/chef2.jpg')}}" alt="">
         </div>
     
 </section>
