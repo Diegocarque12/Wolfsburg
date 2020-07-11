@@ -5,7 +5,7 @@
 <section class="help">
         <div class="help__container">
                 <h1 class="help__container help__container--title"> Preguntas frecuentes</h1>
-                <a class="btn btn-primary help__container--links "   target=”_blank” href="pdf/Manual de Usuario.pdf">Descargar manual</a>
+                <a class="btn btn-primary help__container--links "   target=”_blank” href=" {{asset('/pdf/Manual.pdf')}}">Descargar manual</a>
         </div>
        
         
