@@ -33,7 +33,7 @@ class ProductMenuController extends Controller
     	$product->category_id = $request->input('category_id');
     	$product->save();
 
-    	return redirect('/products');
+    	return redirect('/products')->with('info' , 'Producto creado exitosamente');
     }
 
     public function edit($id){
@@ -50,13 +50,13 @@ class ProductMenuController extends Controller
     	$product->category_id = $request->input('category_id');
     	$product->save();
 
-    	return redirect('/products');
+    	return redirect('/products')->with('info' , 'Producto actualizado exitosamente');
     }
 
     public function destroy($id){
     	$product = productMenu::find($id);
     	$product->delete();
 
-    	return back();
+    	return back()->with('info' , 'Producto eliminado exitosamente');
     }
 }

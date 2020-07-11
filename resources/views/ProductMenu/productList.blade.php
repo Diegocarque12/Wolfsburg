@@ -8,6 +8,12 @@
 		<a href="{{ url('/products/create') }}" class="btn btn-outline-primary m-3">Create</a>
 	</div>
 
+			<div>
+			  @if(session('info'))
+				{{session('info')}}
+			  @endif
+			</div>
+
 	<table class="table">
 	  <thead>
 	    <tr>
