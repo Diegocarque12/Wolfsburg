@@ -10,7 +10,7 @@
         <h2 class="section__text--h2">Menú</h2>
         <h3 class="section__text--h3">Gourmet</h3>
         <p class="section__text--p">Ordena ahora</p>
-        <a class="section__text--a" href="">Vamos a probar!</a>
+        <a class="section__text--a" href="{{url('/menu')}}">Vamos a probar!</a>
       </div>
   </section>
 
