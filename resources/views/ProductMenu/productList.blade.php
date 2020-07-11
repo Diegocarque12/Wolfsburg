@@ -7,12 +7,15 @@
 		<h1>Lista de Productos del Menu</h1>
 		<a href="{{ url('/products/create') }}" class="btn btn-outline-primary m-3">Create</a>
 	</div>
-
-			<div>
-			  @if(session('info'))
+		@if(session('info'))
+			<div class="alert alert-success alert-dismissable fade show" role="alert">
+			<button type="button" class="close"><span aria-hidden="true" data-dismiss="alert">&times;</span></button>
+				<h3 class="alert-heading">Acción ejecutada</h3>
+			  <p>
 				{{session('info')}}
-			  @endif
+			  </p>
 			</div>
+		@endif
 
 	<table class="table">
 	  <thead>
