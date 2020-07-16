@@ -1,3 +1,56 @@
+
+# Wolfsburg - Proyecto final 
+Proyecto final del curso de Multimedios.
+
+## Acerca del proyecto
+
+
+### Objetivo del sistema de ventas
+
+
+### Participantes del proyecto
+Las personas que se encargaron de la creación del sistema desde cero, desde la parte del backend hasta el frontend, son:
+* [**Diego Carvajal**](https://github.com/Diegocarque12)
+* [**Yuvania Castillo**](https://github.com/yuvania)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
